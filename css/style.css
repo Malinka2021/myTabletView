@@ -79,8 +79,10 @@ body {
     }
     .container {
         width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
+    }
+    .menu {
+        width: 100%;
+        grid-template-columns: repeat(1, 2fr);
     }
     .hamburger-menu {
         display: none;
