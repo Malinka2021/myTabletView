@@ -8,7 +8,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
 }
-.grid-item {
+.grid-item {           /*rules for all objects*/
     display: grid;
     border: 2px solid #070606;
     align-items: center;
@@ -72,6 +72,9 @@ body {
     height: 90px;
     clip-path: circle(50% at 50% 50%);
 }
+.page-menu {
+    display: none; /*in mobile width do not show page menu*/
+}
 @media (min-width: 600px) and (max-width: 1024px) {
     body{
         background-color: #216d86;
@@ -82,12 +85,22 @@ body {
     }
     .menu {
         width: 100%;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: 1fr 2fr; /*1colum- logo and 2 page menu*/
     }
     .hamburger-menu {
         display: none;
     }
     .page-menu {
+        display: block;
         list-style: none;
+        justify-self: end;
+        margin-right: 20px;
+    }
+    .page-menu li{
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    .star {
+        justify-self: start;
     }
 }
