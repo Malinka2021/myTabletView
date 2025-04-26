@@ -75,6 +75,9 @@ body {
 .page-menu {
     display: none; /*in mobile width do not show page menu*/
 }
+.gallery {
+    display: none; /*in mobile width do not show gallery*/
+}
 @media (min-width: 600px) and (max-width: 1024px) {
     body{
         background-color: #216d86;
@@ -102,5 +105,19 @@ body {
     }
     .star {
         justify-self: start;
+    }
+    .frame {
+        display: none;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    .gallery-image {
+        width: 299px;
+        height: 149px;
+        background-color: aqua;
+        clip-path: polygon(0 0, 100% 1%, 100% 20%, 100% 68%, 63% 99%, 0 100%, 0 32%);
     }
 }
