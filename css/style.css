@@ -1,11 +1,7 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
 }
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     display: grid;
     gap: 20px;
@@ -85,5 +81,11 @@ html, body {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    .page-menu {
+        list-style: none;
     }
 }
