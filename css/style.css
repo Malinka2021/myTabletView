@@ -137,4 +137,10 @@ body {
         background-color: #ff6b44;
         clip-path: polygon(0 0, 100% 1%, 100% 20%, 100% 100%, 63% 100%, 0 100%, 0 32%);
     }
+    .social-media {
+        width: 100%; /*take the whole screen width otherwise not moving*/
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
 }
