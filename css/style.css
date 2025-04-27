@@ -144,3 +144,29 @@ body {
         gap: 20px;
     }
 }
+@media (min-width: 1025px) {
+    body{
+        background-color: #216d86;
+        color: #ffffff;
+    }
+    .container {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+        grid-template-columns: 1fr 2fr; /*1colum- logo and 2 page menu*/
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    .page-menu {
+        display: block;
+        list-style: none;
+        justify-self: end;
+        margin-right: 20px;
+    }
+    .page-menu li{
+        display: inline-block;
+        text-transform: uppercase;
+    }
+}
