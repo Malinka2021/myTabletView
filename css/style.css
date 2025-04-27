@@ -40,7 +40,6 @@ body {
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 .main {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 20px;
@@ -76,6 +75,10 @@ body {
 .gallery {
     display: none; /*in mobile width do not show gallery*/
 }
+.contact-form {
+    display: none; /*in mobile width do not show contact form*/
+}
+
 @media (min-width: 600px) and (max-width: 1024px) {
     body{
         background-color: #216d86;
@@ -118,5 +121,20 @@ body {
         height: 149px;
         background-color: aqua;
         clip-path: polygon(0 0, 100% 1%, 100% 20%, 100% 68%, 63% 99%, 0 100%, 0 32%);
+    }
+    .bevel {
+       width: 300px;
+       height: 210px;
+       margin-top: 20px;
+    }
+    .message {
+        display: none;
+    }
+    .contact-form {
+        display: block;
+        width: 728px;
+        height: 434px;
+        background-color: #ff6b44;
+        clip-path: polygon(0 0, 100% 1%, 100% 20%, 100% 100%, 63% 100%, 0 100%, 0 32%);
     }
 }
